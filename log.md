@@ -58,3 +58,16 @@ Updated landing page UI structure and content
 Today, I updated part of the landing page UI to better reflect the purpose of the project. As I build this project, I’m using Next.js’s App Router for the first time, and I’m gradually learning concepts that are new to me. For example, today I learned that the App Router uses server components by default, and that if a component needs to run on the client side, you have to add the "use client" directive at the top. I think I need to study server components in more depth.
 
 [Commit history](https://github.com/danimkim/no-more-bookmarks/commit/916d321bd9eab4d088434bedf71d72b113e6b2a0)
+
+## Day 5: 21 July, 2025
+
+### Today's Progress
+
+Updated UX in user authentication started working on Supabase auth
+
+### Thoughts
+
+I added the sign-in and sign-up pages and read through some of the Supabase Auth documentation. I’m currently considering two authentication approaches:
+Option 1: Have users enter their email and password at once, and complete the signup right after email confirmation.
+Option 2: Use the `Sign up with redirect URL` option, where users are redirected to a password setup page after confirming their email.
+Option 2 is said to offer better scalability (i.e, adding social login or magic link) but since I need to build the MVP quickly, I’m a bit torn. I’ll think about it more and make a decision tomorrow.
